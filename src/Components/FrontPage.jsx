@@ -2,6 +2,8 @@ import React from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import backgroundImage from "../image/Group_17.svg";
 import NavbarHeaderImage from "../image/Group 20.svg";
+import LearnImage from "../image/undraw_font_re_efri.svg";
+import ProductDesignImage from "../image/undraw_design_tools_-42-tf.svg";
 import { Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { Flex } from "@chakra-ui/react";
@@ -24,6 +26,7 @@ const FrontPage = () => {
   return (
     <ChakraProvider theme={theme}>
       <Center
+        w="100%"
         bgColor="black"
         bgPosition="0% 1%"
         bgImage={backgroundImage}
@@ -40,7 +43,6 @@ const FrontPage = () => {
             xl: "90%",
           }}
           maxW="1300px"
-          height="100vh"
         >
           {/* Navigation bar */}
           <Flex
@@ -250,9 +252,251 @@ const FrontPage = () => {
           </Flex>
           {/* Closung of navigation bar */}
           {/* 2nd section */}
-          <Flex>
-            <Box flex="1"></Box>
-            <Box flex="1">{/* <Image src={}></Image> */}</Box>
+          <Flex
+            my="2.7rem"
+            flexDirection={{
+              xsml: "column",
+              sm: "colum",
+              md: "column",
+              lg: "row",
+              xl: "row",
+            }}
+          >
+            <Box
+              flex="1"
+              display={{
+                xsml: "none",
+                sm: "none",
+                md: "none",
+                lg: "block",
+                xl: "block",
+              }}
+            >
+              <Text
+                color="white"
+                fontSize="clamp(1.5rem,10vw,3.5rem)"
+                fontWeight="500"
+              >
+                Learn,Build, <br></br>
+                Grow...
+              </Text>
+              <Text color="white" fontSize="clamp(0.8rem,5vw,1.3rem)">
+                Learn how to code,design usable and accessible <br />
+                user interface and conduct user experience <br />
+                research.
+              </Text>
+              <Box
+                _hover={{
+                  color: "blue",
+                  cursor: "pointer",
+                }}
+                display={{
+                  xsml: "flex",
+                  sm: "flex",
+                  md: "flex",
+                  lg: "block",
+                  xl: "block",
+                }}
+                justifyContent={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "flex-start",
+                  xl: "flex-start",
+                }}
+                mt={{
+                  xsml: "1.5rem",
+                  sm: "1.2rem",
+                  md: "1.2rem",
+                  lg: "1.2rem",
+                  xl: "1.2rem",
+                }}
+              >
+                <Button
+                  size="lg"
+                  px="3rem"
+                  borderRadius="25px"
+                  color="white"
+                  bgColor="blue"
+                >
+                  Register
+                </Button>
+              </Box>
+            </Box>
+            <Box flex="1">
+              <Image margin="0 auto" src={LearnImage}></Image>
+            </Box>
+            {/* for smaller screens */}
+            <Box
+              flex="1"
+              display={{
+                xsml: "block",
+                sm: "block",
+                md: "block",
+                lg: "none",
+                xl: "none",
+              }}
+            >
+              <Text
+                color="white"
+                fontSize="clamp(1.5rem,10vw,3.5rem)"
+                fontWeight="500"
+                margin={{
+                  xsml: "1.7rem",
+                  sm: "1.7rem",
+                  md: "1.7rem",
+                  lg: "0",
+                  xl: "0",
+                }}
+                textAlign={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "initial",
+                  xl: "initial",
+                }}
+              >
+                Learn,Build, <br></br>
+                Grow...
+              </Text>
+              <Text
+                textAlign={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "initial",
+                  xl: "initial",
+                }}
+                color="white"
+                fontSize="clamp(0.8rem,5vw,1.3rem)"
+              >
+                Learn how to code,design usable and accessible <br />
+                user interface and conduct user experience <br />
+                research
+              </Text>
+              <Box
+                _hover={{
+                  color: "blue",
+                  cursor: "pointer",
+                }}
+                display={{
+                  xsml: "flex",
+                  sm: "flex",
+                  md: "flex",
+                  lg: "block",
+                  xl: "block",
+                }}
+                justifyContent={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "flex-start",
+                  xl: "flex-start",
+                }}
+                mt={{
+                  xsml: "1.5rem",
+                  sm: "1.2rem",
+                  md: "1.2rem",
+                  lg: "1.2rem",
+                  xl: "1.2rem",
+                }}
+              >
+                <Button
+                  size="lg"
+                  px="3rem"
+                  borderRadius="25px"
+                  bgColor="blue"
+                  color="white"
+                >
+                  Register
+                </Button>
+              </Box>
+            </Box>
+          </Flex>
+          <Box>
+            <Text
+              color="white"
+              fontSize="clamp(0.7rem,5vw,1.3rem)"
+              textAlign="center"
+            >
+              What We Touch
+            </Text>
+            <Text
+              color="white"
+              fontSize="clamp(1.8rem,5vw,2.5rem)"
+              textAlign="center"
+              fontWeight="600"
+            >
+              What We offer
+            </Text>
+          </Box>
+          <Flex my="4rem">
+            <Box flex="1">
+              <Image src={ProductDesignImage} />
+            </Box>
+            <Box flex="1">
+              <Box
+                mx="3rem"
+                textAlign={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "initial",
+                  xl: "initial",
+                }}
+              >
+                <Text
+                  color="white"
+                  fontSize="clamp(1.5rem,10vw,2.5rem)"
+                  fontWeight="600"
+                >
+                  Product Design
+                </Text>
+                <Text color="white" fontSize="clamp(0.9rem,10vw,1.1rem)">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus consequatur dolores in excepturi, temporibus possimus
+                  optio hic esse sunt, rem iste aperiam cum, odit libero
+                  dignissimos vero cupiditate eveniet labore!
+                </Text>
+                <Box
+                  _hover={{
+                    color: "blue",
+                    cursor: "pointer",
+                  }}
+                  display={{
+                    xsml: "flex",
+                    sm: "flex",
+                    md: "flex",
+                    lg: "block",
+                    xl: "block",
+                  }}
+                  justifyContent={{
+                    xsml: "center",
+                    sm: "center",
+                    md: "center",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  }}
+                  mt={{
+                    xsml: "1.5rem",
+                    sm: "1.2rem",
+                    md: "1.2rem",
+                    lg: "1.2rem",
+                    xl: "1.2rem",
+                  }}
+                >
+                  <Button
+                    size="lg"
+                    px="3rem"
+                    borderRadius="25px"
+                    bgColor="blue"
+                    color="white"
+                  >
+                    Register
+                  </Button>
+                </Box>
+              </Box>
+            </Box>
           </Flex>
         </Box>
       </Center>
