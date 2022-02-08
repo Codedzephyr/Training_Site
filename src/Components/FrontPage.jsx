@@ -4,6 +4,9 @@ import backgroundImage from "../image/Group_17.svg";
 import NavbarHeaderImage from "../image/Group 20.svg";
 import LearnImage from "../image/undraw_font_re_efri.svg";
 import ProductDesignImage from "../image/undraw_design_tools_-42-tf.svg";
+import FrontEndDesignImage from "../image/undraw_programming_re_kg9v.svg";
+import JavaImage from "../image/undraw_developer_activity_re_39tg.svg";
+import PythonImage from "../image/undraw_artificial_intelligence_re_enpp.svg";
 import { Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { Flex } from "@chakra-ui/react";
@@ -370,9 +373,8 @@ const FrontPage = () => {
                 color="white"
                 fontSize="clamp(0.8rem,5vw,1.3rem)"
               >
-                Learn how to code,design usable and accessible <br />
-                user interface and conduct user experience <br />
-                research
+                Learn how to code,design usable and accessible user interface
+                and conduct user experience research
               </Text>
               <Box
                 _hover={{
@@ -416,27 +418,42 @@ const FrontPage = () => {
           <Box>
             <Text
               color="white"
-              fontSize="clamp(0.7rem,5vw,1.3rem)"
+              fontSize="clamp(1.7rem,5vw,1.3rem)"
               textAlign="center"
             >
               What We Touch
             </Text>
             <Text
               color="white"
-              fontSize="clamp(1.8rem,5vw,2.5rem)"
+              fontSize="clamp(2.8rem,5vw,2.5rem)"
               textAlign="center"
               fontWeight="600"
             >
               What We offer
             </Text>
           </Box>
-          <Flex my="4rem">
+          <Flex
+            my="6rem"
+            flexDirection={{
+              xsml: "column",
+              sm: "column",
+              md: "column",
+              lg: "row",
+              xl: "row",
+            }}
+          >
             <Box flex="1">
               <Image src={ProductDesignImage} />
             </Box>
             <Box flex="1">
               <Box
-                mx="3rem"
+                mx={{
+                  xsml: "1rem",
+                  sm: "1rem",
+                  md: "1rem",
+                  lg: "3rem",
+                  xl: "3rem",
+                }}
                 textAlign={{
                   xsml: "center",
                   sm: "center",
@@ -450,9 +467,19 @@ const FrontPage = () => {
                   fontSize="clamp(1.5rem,10vw,2.5rem)"
                   fontWeight="600"
                 >
-                  Product Design
+                  FrontEnd Web Development
                 </Text>
-                <Text color="white" fontSize="clamp(0.9rem,10vw,1.1rem)">
+                <Text
+                  color="white"
+                  fontSize="clamp(0.9rem,10vw,1.3rem)"
+                  my={{
+                    xsml: "1.5rem",
+                    sm: "1.5rem",
+                    md: "1.5rem",
+                    lg: "2.5rem",
+                    xl: "2.5rem",
+                  }}
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Ducimus consequatur dolores in excepturi, temporibus possimus
                   optio hic esse sunt, rem iste aperiam cum, odit libero
@@ -495,6 +522,443 @@ const FrontPage = () => {
                     Register
                   </Button>
                 </Box>
+              </Box>
+            </Box>
+          </Flex>
+          <Flex
+            my="6.7rem"
+            flexDirection={{
+              xsml: "column",
+              sm: "colum",
+              md: "column",
+              lg: "row",
+              xl: "row",
+            }}
+          >
+            <Box
+              flex="1"
+              display={{
+                xsml: "none",
+                sm: "none",
+                md: "none",
+                lg: "block",
+                xl: "block",
+              }}
+            >
+              <Text
+                color="white"
+                fontSize="clamp(1.5rem,10vw,2.5rem)"
+                fontWeight="600"
+              >
+                FrontEnd Web Development
+              </Text>
+              <Text
+                color="white"
+                fontSize="clamp(0.9rem,10vw,1.3rem)"
+                my={{
+                  xsml: "1.5rem",
+                  sm: "1.5rem",
+                  md: "1.5rem",
+                  lg: "2.5rem",
+                  xl: "2.5rem",
+                }}
+                lineHeight="1.7"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                consequatur dolores in excepturi, temporibus possimus optio hic
+                esse sunt, rem iste aperiam cum, odit libero dignissimos vero
+                cupiditate eveniet labore!XX
+              </Text>
+              <Box
+                _hover={{
+                  color: "blue",
+                  cursor: "pointer",
+                }}
+                display={{
+                  xsml: "flex",
+                  sm: "flex",
+                  md: "flex",
+                  lg: "block",
+                  xl: "block",
+                }}
+                justifyContent={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "flex-start",
+                  xl: "flex-start",
+                }}
+                mt={{
+                  xsml: "1.5rem",
+                  sm: "1.2rem",
+                  md: "1.2rem",
+                  lg: "1.2rem",
+                  xl: "1.2rem",
+                }}
+              >
+                <Button
+                  size="lg"
+                  px="3rem"
+                  borderRadius="25px"
+                  color="white"
+                  bgColor="blue"
+                >
+                  Register
+                </Button>
+              </Box>
+            </Box>
+            <Box flex="1">
+              <Image margin="0 auto" src={FrontEndDesignImage}></Image>
+            </Box>
+            {/* for smaller screens */}
+            <Box
+              flex="1"
+              display={{
+                xsml: "block",
+                sm: "block",
+                md: "block",
+                lg: "none",
+                xl: "none",
+              }}
+            >
+              <Text
+                color="white"
+                fontSize="clamp(1.5rem,10vw,2.5rem)"
+                fontWeight="600"
+                textAlign={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "initial",
+                  xl: "initial",
+                }}
+              >
+                FrontEnd Web Development
+              </Text>
+              <Text
+                color="white"
+                fontSize="clamp(0.9rem,10vw,1.1rem)"
+                my={{
+                  xsml: "1.5rem",
+                  sm: "1.5rem",
+                  md: "1.5rem",
+                  lg: "0rem",
+                  xl: "0rem",
+                }}
+                textAlign={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "initial",
+                  xl: "initial",
+                }}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                consequatur dolores in excepturi, temporibus possimus optio hic
+                esse sunt, rem iste aperiam cum, odit libero dignissimos vero
+                cupiditate eveniet labore!
+              </Text>
+              <Box
+                _hover={{
+                  color: "blue",
+                  cursor: "pointer",
+                }}
+                display={{
+                  xsml: "flex",
+                  sm: "flex",
+                  md: "flex",
+                  lg: "block",
+                  xl: "block",
+                }}
+                justifyContent={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "flex-start",
+                  xl: "flex-start",
+                }}
+                mt={{
+                  xsml: "1.5rem",
+                  sm: "1.2rem",
+                  md: "1.2rem",
+                  lg: "1.2rem",
+                  xl: "1.2rem",
+                }}
+              >
+                <Button
+                  size="lg"
+                  px="3rem"
+                  borderRadius="25px"
+                  bgColor="blue"
+                  color="white"
+                >
+                  Register
+                </Button>
+              </Box>
+            </Box>
+          </Flex>
+          <Flex
+            my="6rem"
+            flexDirection={{
+              xsml: "column",
+              sm: "column",
+              md: "column",
+              lg: "row",
+              xl: "row",
+            }}
+          >
+            <Box flex="1">
+              <Image src={JavaImage} />
+            </Box>
+            <Box flex="1">
+              <Box
+                mx={{
+                  xsml: "1rem",
+                  sm: "1rem",
+                  md: "1rem",
+                  lg: "3rem",
+                  xl: "3rem",
+                }}
+                textAlign={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "initial",
+                  xl: "initial",
+                }}
+              >
+                <Text
+                  color="white"
+                  fontSize="clamp(1.5rem,10vw,2.5rem)"
+                  fontWeight="600"
+                >
+                  JAVA
+                </Text>
+                <Text
+                  color="white"
+                  fontSize="clamp(0.9rem,10vw,1.3rem)"
+                  my={{
+                    xsml: "1.5rem",
+                    sm: "1.5rem",
+                    md: "1.5rem",
+                    lg: "2.5rem",
+                    xl: "2.5rem",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus consequatur dolores in excepturi, temporibus possimus
+                  optio hic esse sunt, rem iste aperiam cum, odit libero
+                  dignissimos vero cupiditate eveniet labore!
+                </Text>
+                <Box
+                  _hover={{
+                    color: "blue",
+                    cursor: "pointer",
+                  }}
+                  display={{
+                    xsml: "flex",
+                    sm: "flex",
+                    md: "flex",
+                    lg: "block",
+                    xl: "block",
+                  }}
+                  justifyContent={{
+                    xsml: "center",
+                    sm: "center",
+                    md: "center",
+                    lg: "flex-start",
+                    xl: "flex-start",
+                  }}
+                  mt={{
+                    xsml: "1.5rem",
+                    sm: "1.2rem",
+                    md: "1.2rem",
+                    lg: "1.2rem",
+                    xl: "1.2rem",
+                  }}
+                >
+                  <Button
+                    size="lg"
+                    px="3rem"
+                    borderRadius="25px"
+                    bgColor="blue"
+                    color="white"
+                  >
+                    Register
+                  </Button>
+                </Box>
+              </Box>
+            </Box>
+          </Flex>
+          <Flex
+            my="6.7rem"
+            flexDirection={{
+              xsml: "column",
+              sm: "colum",
+              md: "column",
+              lg: "row",
+              xl: "row",
+            }}
+          >
+            <Box
+              flex="1"
+              display={{
+                xsml: "none",
+                sm: "none",
+                md: "none",
+                lg: "block",
+                xl: "block",
+              }}
+            >
+              <Text
+                color="white"
+                fontSize="clamp(1.5rem,10vw,2.5rem)"
+                fontWeight="600"
+              >
+                Python and Machine Learning
+              </Text>
+              <Text
+                color="white"
+                fontSize="clamp(0.9rem,10vw,1.3rem)"
+                my={{
+                  xsml: "1.5rem",
+                  sm: "1.5rem",
+                  md: "1.5rem",
+                  lg: "2.5rem",
+                  xl: "2.5rem",
+                }}
+                lineHeight="1.7"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                consequatur dolores in excepturi, temporibus possimus optio hic
+                esse sunt, rem iste aperiam cum, odit libero dignissimos vero
+                cupiditate eveniet labore!XX
+              </Text>
+              <Box
+                _hover={{
+                  color: "blue",
+                  cursor: "pointer",
+                }}
+                display={{
+                  xsml: "flex",
+                  sm: "flex",
+                  md: "flex",
+                  lg: "block",
+                  xl: "block",
+                }}
+                justifyContent={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "flex-start",
+                  xl: "flex-start",
+                }}
+                mt={{
+                  xsml: "1.5rem",
+                  sm: "1.2rem",
+                  md: "1.2rem",
+                  lg: "1.2rem",
+                  xl: "1.2rem",
+                }}
+              >
+                <Button
+                  size="lg"
+                  px="3rem"
+                  borderRadius="25px"
+                  color="white"
+                  bgColor="blue"
+                >
+                  Register
+                </Button>
+              </Box>
+            </Box>
+            <Box flex="1">
+              <Image margin="0 auto" src={PythonImage}></Image>
+            </Box>
+            {/* for smaller screens */}
+            <Box
+              flex="1"
+              display={{
+                xsml: "block",
+                sm: "block",
+                md: "block",
+                lg: "none",
+                xl: "none",
+              }}
+            >
+              <Text
+                color="white"
+                fontSize="clamp(1.5rem,10vw,2.5rem)"
+                fontWeight="600"
+                textAlign={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "initial",
+                  xl: "initial",
+                }}
+              >
+                Python and Machine Learning
+              </Text>
+              <Text
+                color="white"
+                fontSize="clamp(0.9rem,10vw,1.1rem)"
+                my={{
+                  xsml: "1.5rem",
+                  sm: "1.5rem",
+                  md: "1.5rem",
+                  lg: "0rem",
+                  xl: "0rem",
+                }}
+                textAlign={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "initial",
+                  xl: "initial",
+                }}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                consequatur dolores in excepturi, temporibus possimus optio hic
+                esse sunt, rem iste aperiam cum, odit libero dignissimos vero
+                cupiditate eveniet labore!
+              </Text>
+              <Box
+                _hover={{
+                  color: "blue",
+                  cursor: "pointer",
+                }}
+                display={{
+                  xsml: "flex",
+                  sm: "flex",
+                  md: "flex",
+                  lg: "block",
+                  xl: "block",
+                }}
+                justifyContent={{
+                  xsml: "center",
+                  sm: "center",
+                  md: "center",
+                  lg: "flex-start",
+                  xl: "flex-start",
+                }}
+                mt={{
+                  xsml: "1.5rem",
+                  sm: "1.2rem",
+                  md: "1.2rem",
+                  lg: "1.2rem",
+                  xl: "1.2rem",
+                }}
+              >
+                <Button
+                  size="lg"
+                  px="3rem"
+                  borderRadius="25px"
+                  bgColor="blue"
+                  color="white"
+                >
+                  Register
+                </Button>
               </Box>
             </Box>
           </Flex>
