@@ -1,6 +1,6 @@
 import React from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import backgroundImage from "../image/Group_17.svg";
+import { Input } from "@chakra-ui/react";
 import NavbarHeaderImage from "../image/Group 20.svg";
 import LearnImage from "../image/undraw_font_re_efri.svg";
 import ProductDesignImage from "../image/undraw_design_tools_-42-tf.svg";
@@ -31,10 +31,10 @@ const FrontPage = () => {
       <Center
         w="100%"
         bgColor="black"
-        bgPosition="0% 1%"
-        bgImage={backgroundImage}
+        bgPosition="0% 1%, 50% 20%"
+        bgImage="url('/static/media/Group_17.32ff4d36090d754448f925e529578336.svg'),url('/static/media/Group_17.32ff4d36090d754448f925e529578336.svg')"
         bgSize="600px"
-        bgRepeat="no-repeat"
+        bgRepeat="no-repeat no-repeat"
       >
         {/* main container */}
         <Box
@@ -962,6 +962,29 @@ const FrontPage = () => {
               </Box>
             </Box>
           </Flex>
+          <Center>
+            <Box w="100%" maxW="600px">
+                <Input
+                  placeholder="Email Address"
+                  size="lg"
+                  bgColor="white"
+                  position="relative"
+                  borderRadius="24px"
+                />
+                <Button
+                  size="lg"
+                  right="0px"
+                  px="3rem"
+                  borderRadius="25px"
+                  bgColor="blue"
+                  color="white"
+                  top="-30px"
+                  positon="absolute"
+                >
+                  Register
+                </Button>
+            </Box>
+          </Center>
         </Box>
       </Center>
     </ChakraProvider>
