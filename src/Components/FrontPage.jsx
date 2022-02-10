@@ -1,6 +1,6 @@
 import React from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import { Input } from "@chakra-ui/react";
+import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
 import NavbarHeaderImage from "../image/Group 20.svg";
 import LearnImage from "../image/undraw_font_re_efri.svg";
 import ProductDesignImage from "../image/undraw_design_tools_-42-tf.svg";
@@ -9,6 +9,8 @@ import JavaImage from "../image/undraw_developer_activity_re_39tg.svg";
 import PythonImage from "../image/undraw_artificial_intelligence_re_enpp.svg";
 import { Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
+import { Icon } from "@chakra-ui/react";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { Flex } from "@chakra-ui/react";
 import { ListItem, UnorderedList } from "@chakra-ui/react";
 import { Center } from "@chakra-ui/react";
@@ -962,28 +964,60 @@ const FrontPage = () => {
               </Box>
             </Box>
           </Flex>
-          <Center>
+          <Box my="2rem">
+            <Text
+              color="white"
+              fontSize="clamp(1.2rem,5vw,1.2rem)"
+              textAlign="center"
+            >
+              stay informed
+            </Text>
+            <Text
+              color="white"
+              fontSize="clamp(1.8rem,5vw,2.3rem)"
+              textAlign="center"
+              fontWeight="600"
+            >
+              Support
+            </Text>
+          </Box>
+          <Center mb="0.5rem">
             <Box w="100%" maxW="600px">
+              <InputGroup>
                 <Input
                   placeholder="Email Address"
-                  size="lg"
+                  py="1.5em"
                   bgColor="white"
-                  position="relative"
                   borderRadius="24px"
                 />
-                <Button
-                  size="lg"
-                  right="0px"
-                  px="3rem"
-                  borderRadius="25px"
-                  bgColor="blue"
-                  color="white"
-                  top="-30px"
-                  positon="absolute"
-                >
-                  Register
-                </Button>
+                <InputRightElement w="10rem">
+                  <Button
+                    size="lg"
+                    mt="0.9rem"
+                    mr="0.3rem"
+                    px="3rem"
+                    borderRadius="25px"
+                    bgColor="blue"
+                    color="white"
+                  >
+                    Register
+                  </Button>
+                </InputRightElement>
+              </InputGroup>
             </Box>
+          </Center>
+          <Center my="1.7rem">
+            <Flex w="60%" maxW="200px">
+              <Box flex="1">
+                <Image src={NavbarHeaderImage} />
+              </Box>
+              <Box flex="1">
+                <Text fontSize="1.4rem" fontWeight="600" color="white">
+                  Codeinn
+                </Text>
+                {/* <Icon as={faCoffee} fontSize="28px" color="blue"]\></Icon> */}
+              </Box>
+            </Flex>
           </Center>
         </Box>
       </Center>
