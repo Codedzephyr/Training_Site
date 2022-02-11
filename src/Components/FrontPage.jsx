@@ -1,16 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
 import NavbarHeaderImage from "../image/Group 20.svg";
 import LearnImage from "../image/undraw_font_re_efri.svg";
-import BackgroundImage from "../image/Ellipse_9.svg";
 import ProductDesignImage from "../image/undraw_design_tools_-42-tf.svg";
 import FrontEndDesignImage from "../image/undraw_programming_re_kg9v.svg";
 import JavaImage from "../image/undraw_developer_activity_re_39tg.svg";
 import PythonImage from "../image/undraw_artificial_intelligence_re_enpp.svg";
 import { Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
-import { Stack, HStack } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 import { Flex } from "@chakra-ui/react";
 import { ListItem, UnorderedList } from "@chakra-ui/react";
 import { Center } from "@chakra-ui/react";
@@ -28,6 +27,11 @@ const theme = extendTheme({
 });
 
 const FrontPage = () => {
+  const [isDisplayNavigationBar, setNavigationBarDisplay] = useState(false);
+
+  const handleclickShow = () => {
+    setNavigationBarDisplay(!isDisplayNavigationBar);
+  };
   return (
     <ChakraProvider theme={theme}>
       <Center
@@ -80,12 +84,44 @@ const FrontPage = () => {
                     </Text>
                   </Box>
                 </Flex>
-                <Box flex="1"></Box>
+                <Box flex="1">
+                  <Box
+                    my="2.9rem"
+                    display={{
+                      xsml: "flex",
+                      sm: "flex",
+                      md: "flex",
+                      lg: "none",
+                      xl: "none",
+                    }}
+                    justifyContent="flex-end"
+                    cursor="pointer"
+                    onClick={handleclickShow}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      width="25"
+                      height="25"
+                    >
+                      <path
+                        fill="#fff"
+                        d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+                      />
+                    </svg>
+                  </Box>
+                </Box>
               </Flex>
             </Box>
             <Box flex="1">
               <UnorderedList
-                display="flex"
+                display={{
+                  xsml: "none",
+                  sm: "none",
+                  md: "none",
+                  lg: "flex",
+                  xl: "flex",
+                }}
                 flexDirection={{
                   xsml: "column",
                   sm: "column",
@@ -253,6 +289,186 @@ const FrontPage = () => {
                   </Button>
                 </ListItem>
               </UnorderedList>
+              {/* small screens */}
+              {isDisplayNavigationBar ? (
+                <UnorderedList
+                  display={{
+                    xsml: "flex",
+                    sm: "flex",
+                    md: "flex",
+                    lg: "none",
+                    xl: "none",
+                  }}
+                  flexDirection={{
+                    xsml: "column",
+                    sm: "column",
+                    md: "column",
+                    lg: "row",
+                    xl: "row",
+                  }}
+                  listStyleType="none"
+                  color="white"
+                  py={{
+                    xsml: "0em",
+                    sm: "0em",
+                    md: "0em",
+                    lg: "2em",
+                    xl: "2em",
+                  }}
+                  justifyContent={{
+                    xsml: "flex-start",
+                    sm: "flex-start",
+                    md: "flex-start",
+                    lg: "flex-end",
+                    xl: "flex-end",
+                  }}
+                >
+                  <ListItem
+                    px="1.5em"
+                    mt="0.7rem"
+                    _hover={{
+                      color: "blue",
+                      cursor: "pointer",
+                    }}
+                    textAlign={{
+                      xsml: "center",
+                      sm: "center",
+                      md: "center",
+                      lg: "initial",
+                      xl: "initial",
+                    }}
+                    fontSize={{
+                      xsml: "1.2rem",
+                      sm: "1.5em",
+                      md: "1.2rem",
+                      lg: "initial",
+                      xl: "initial",
+                    }}
+                    fontWeight={{
+                      xsml: "600",
+                      sm: "600",
+                      md: "600",
+                      lg: "normal",
+                      xl: "normal",
+                    }}
+                  >
+                    Homepage
+                  </ListItem>
+                  <ListItem
+                    _hover={{
+                      color: "blue",
+                      cursor: "pointer",
+                    }}
+                    textAlign={{
+                      xsml: "center",
+                      sm: "center",
+                      md: "center",
+                      lg: "initial",
+                      xl: "initial",
+                    }}
+                    px="1.5em"
+                    mt={{
+                      xsml: "1.5rem",
+                      sm: "1.2rem",
+                      md: "1.2rem",
+                      lg: "0.7rem",
+                      xl: "0.7rem",
+                    }}
+                    fontSize={{
+                      xsml: "1.2rem",
+                      sm: "1.5em",
+                      md: "1.2rem",
+                      lg: "initial",
+                      xl: "initial",
+                    }}
+                    fontWeight={{
+                      xsml: "600",
+                      sm: "600",
+                      md: "600",
+                      lg: "normal",
+                      xl: "normal",
+                    }}
+                  >
+                    Offers
+                  </ListItem>
+                  <ListItem
+                    _hover={{
+                      color: "blue",
+                      cursor: "pointer",
+                    }}
+                    textAlign={{
+                      xsml: "center",
+                      sm: "center",
+                      md: "center",
+                      lg: "initial",
+                      xl: "initial",
+                    }}
+                    px="1.5em"
+                    mt={{
+                      xsml: "1.5rem",
+                      sm: "1.2rem",
+                      md: "1.2rem",
+                      lg: "0.7rem",
+                      xl: "0.7rem",
+                    }}
+                    fontSize={{
+                      xsml: "1.2rem",
+                      sm: "1.5em",
+                      md: "1.2rem",
+                      lg: "initial",
+                      xl: "initial",
+                    }}
+                    fontWeight={{
+                      xsml: "600",
+                      sm: "600",
+                      md: "600",
+                      lg: "normal",
+                      xl: "normal",
+                    }}
+                  >
+                    Support
+                  </ListItem>
+                  <ListItem
+                    _hover={{
+                      color: "blue",
+                      cursor: "pointer",
+                    }}
+                    px="1.5em"
+                    display={{
+                      xsml: "flex",
+                      sm: "flex",
+                      md: "flex",
+                      lg: "block",
+                      xl: "block",
+                    }}
+                    justifyContent={{
+                      xsml: "center",
+                      sm: "center",
+                      md: "center",
+                      lg: "flex-start",
+                      xl: "flex-start",
+                    }}
+                    mt={{
+                      xsml: "1.5rem",
+                      sm: "1.2rem",
+                      md: "1.2rem",
+                      lg: "0rem",
+                      xl: "0rem",
+                    }}
+                  >
+                    <Button
+                      size="lg"
+                      px="3rem"
+                      borderRadius="25px"
+                      bgColor="blue"
+                    >
+                      Register
+                    </Button>
+                  </ListItem>
+                </UnorderedList>
+              ) : (
+                <Box></Box>
+              )}
             </Box>
           </Flex>
           {/* Closung of navigation bar */}
