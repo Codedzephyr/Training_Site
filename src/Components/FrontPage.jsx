@@ -7,8 +7,6 @@ import ProductDesignImage from "../image/undraw_design_tools_-42-tf.svg";
 import FrontEndDesignImage from "../image/undraw_programming_re_kg9v.svg";
 import JavaImage from "../image/undraw_developer_activity_re_39tg.svg";
 import PythonImage from "../image/undraw_artificial_intelligence_re_enpp.svg";
-import BackgroundImage from "../image/Group_17.svg";
-import BackgroundImage1 from "../image/Ellipse_9.svg";
 import { Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { HStack } from "@chakra-ui/react";
