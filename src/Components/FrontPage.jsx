@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
-import NavbarHeaderImage from "../image/Group 20.svg";
+import NavbarHeaderImage from "../image/Group_20.svg";
 import LearnImage from "../image/undraw_font_re_efri.svg";
 import ProductDesignImage from "../image/undraw_design_tools_-42-tf.svg";
 import FrontEndDesignImage from "../image/undraw_programming_re_kg9v.svg";
@@ -37,8 +37,8 @@ const FrontPage = () => {
       <Center
         w="100%"
         bgColor="black"
+        bgImage=" url(/static/media/Group_17.32ff4d36090d754448f925e529578336.svg), url(/static/media/Ellipse_9.77a36cb639721d4e08044c5b384ac115.svg)"
         bgPosition="0% 0%, 99% 101%"
-        bgImage="url(/static/media/Group_17.32ff4d36090d754448f925e529578336.svg), url(/static/media/Ellipse_9.77a36cb639721d4e08044c5b384ac115.svg)"
         bgSize="600px,272px"
         bgRepeat="no-repeat no-repeat"
       >
