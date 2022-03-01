@@ -26,6 +26,9 @@ const theme = extendTheme({
     lg: "960px",
     xl: "1200px",
   },
+  shadows: {
+    xs: "0px 0px 5px #EA00B78C",
+  },
 });
 
 const FrontPage = () => {
@@ -548,7 +551,9 @@ const FrontPage = () => {
               </Box>
             </Box>
             <Box flex="1">
-              <Image margin="0 auto" src={LearnImage}></Image>
+              <Box>
+                <Image margin="0 auto" src={LearnImage}></Image>
+              </Box>
             </Box>
             {/* for smaller screens */}
             <Box
@@ -646,8 +651,9 @@ const FrontPage = () => {
               color="white"
               fontSize="clamp(1.7rem,5vw,1.3rem)"
               textAlign="center"
+              opacity="0.6"
             >
-              What We Touch
+              What We Teach
             </Text>
             <Text
               color="white"
@@ -659,7 +665,7 @@ const FrontPage = () => {
             </Text>
           </Box>
           <Flex
-            my="6rem"
+            my="11rem"
             flexDirection={{
               xsml: "column",
               sm: "column",
@@ -668,8 +674,19 @@ const FrontPage = () => {
               xl: "row",
             }}
           >
-            <Box flex="1">
-              <Image src={ProductDesignImage} />
+            <Box flex="1" position="relative">
+              <Box
+                borderRadius="50%"
+                bgColor="#727272"
+                filter="auto"
+                blur="225px"
+                position="relative"
+                h="250px"
+                zIndex="10"
+              ></Box>
+              <Box position="absolute" top="0px" zIndex="20">
+                <Image src={ProductDesignImage} />
+              </Box>
             </Box>
             <Box flex="1">
               <Box
@@ -693,7 +710,7 @@ const FrontPage = () => {
                   fontSize="clamp(1.5rem,10vw,2.5rem)"
                   fontWeight="600"
                 >
-                  FrontEnd Web Development
+                  Product Design
                 </Text>
                 <Text
                   color="white"
@@ -753,7 +770,7 @@ const FrontPage = () => {
             </Box>
           </Flex>
           <Flex
-            my="6.7rem"
+            my="9.7rem"
             flexDirection={{
               xsml: "column",
               sm: "colum",
@@ -835,8 +852,24 @@ const FrontPage = () => {
                 </Button>
               </Box>
             </Box>
-            <Box flex="1">
-              <Image margin="0 auto" src={FrontEndDesignImage}></Image>
+            <Box flex="1" position="relative">
+              <Box
+                borderRadius="50%"
+                boxShadow="xs"
+                bgColor="#EA00B78C"
+                filter="auto"
+                blur="241px"
+                position="relative"
+                h="250px"
+                zIndex="10"
+              ></Box>
+              <Box position="absolute" top="-54px" zIndex="50">
+                <Image
+                  margin="0 auto"
+                  p="3em"
+                  src={FrontEndDesignImage}
+                ></Image>
+              </Box>
             </Box>
             {/* for smaller screens */}
             <Box
@@ -927,7 +960,7 @@ const FrontPage = () => {
             </Box>
           </Flex>
           <Flex
-            my="6rem"
+            my="9rem"
             flexDirection={{
               xsml: "column",
               sm: "column",
@@ -936,8 +969,19 @@ const FrontPage = () => {
               xl: "row",
             }}
           >
-            <Box flex="1">
-              <Image src={JavaImage} />
+            <Box flex="1" position="relative">
+              <Box
+                borderRadius="50%"
+                bgColor="#166DF1"
+                filter="auto"
+                blur="241px"
+                position="relative"
+                h="250px"
+                zIndex="10"
+              ></Box>
+              <Center position="absolute" top="-73px" zIndex="50">
+                <Image w="80%" src={JavaImage} />
+              </Center>
             </Box>
             <Box flex="1">
               <Box
@@ -1021,7 +1065,7 @@ const FrontPage = () => {
             </Box>
           </Flex>
           <Flex
-            my="6.7rem"
+            my="9.7rem"
             flexDirection={{
               xsml: "column",
               sm: "colum",
@@ -1103,8 +1147,19 @@ const FrontPage = () => {
                 </Button>
               </Box>
             </Box>
-            <Box flex="1">
-              <Image margin="0 auto" src={PythonImage}></Image>
+            <Box flex="1" position="relative">
+              <Box
+                borderRadius="50%"
+                bgColor="#6700EAA8"
+                filter="auto"
+                blur="241px"
+                position="relative"
+                h="250px"
+                zIndex="10"
+              ></Box>
+              <Box position="absolute" top="0px" zIndex="50">
+                <Image margin="0 auto" src={PythonImage}></Image>
+              </Box>
             </Box>
             {/* for smaller screens */}
             <Box
@@ -1196,27 +1251,28 @@ const FrontPage = () => {
           </Flex>
           <Box
             bgImage={BackgroundImage1}
-            backgroundSize= {{
+            backgroundSize={{
               xsml: "200px",
               sm: "200px",
               md: "200px",
               lg: "384px",
-              xl: "384px"
+              xl: "384px",
             }}
-            backgroundPosition = {{
-              xsml:"116% 0%",
+            backgroundPosition={{
+              xsml: "116% 0%",
               sm: "116% 0%",
               md: "116% 0%",
               lg: "116% 0%",
-              xl: "116% 0%"
+              xl: "116% 0%",
             }}
             backgroundRepeat="no-repeat"
           >
             <Box my="2rem">
               <Text
                 color="white"
-                fontSize="clamp(1.2rem,5vw,1.2rem)"
+                fontSize="clamp(1.0rem,5vw,1.1rem)"
                 textAlign="center"
+                opacity="0.7"
               >
                 stay informed
               </Text>
@@ -1236,7 +1292,7 @@ const FrontPage = () => {
                     placeholder="Email Address"
                     py="1.7em"
                     bgColor="white"
-                    borderRadius="24px"
+                    borderRadius="36px"
                   />
                   <InputRightElement w="10rem">
                     <Button
