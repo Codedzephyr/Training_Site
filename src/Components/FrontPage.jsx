@@ -37,7 +37,7 @@ const FrontPage = () => {
   };
   return (
     <ChakraProvider theme={theme}>
-      <Center w="100%" bgColor="black">
+      <Center w="100%" bgColor="black" overflow="hidden">
         {/* main container */}
         <Box
           w={{
@@ -64,7 +64,13 @@ const FrontPage = () => {
                 <Flex flex="1" gap={3}>
                   <Box>
                     <Image
-                      my="1.5rem"
+                      my={{
+                        xsml: "2.5rem",
+                        sm: "1.5rem",
+                        md: "1.5rem",
+                        lg: "1.5rem",
+                        xl: "1.5rem",
+                      }}
                       display="inline-block"
                       src={NavbarHeaderImage}
                     />
@@ -659,7 +665,7 @@ const FrontPage = () => {
             my={{
               xsml: "7rem",
               sm: "7rem",
-              md: "7rem",
+              md: "13rem",
               lg: "11rem",
               xl: "11rem",
             }}
@@ -681,7 +687,17 @@ const FrontPage = () => {
                 h="200px"
                 zIndex="10"
               ></Box>
-              <Box position="absolute" top="0px" zIndex="20">
+              <Box
+                position="absolute"
+                top={{
+                  xsml: "0px",
+                  sm: "0px",
+                  md: "-194px",
+                  lg: "0px",
+                  xl: "0px",
+                }}
+                zIndex="20"
+              >
                 <Image src={ProductDesignImage} />
               </Box>
             </Box>
@@ -767,7 +783,13 @@ const FrontPage = () => {
             </Box>
           </Flex>
           <Flex
-            my="9.7rem"
+            my={{
+              xsml: "0rem",
+              sm: "9.7rem",
+              md: "25.7rem",
+              lg: "9.7rem",
+              xl: "9.7rem",
+            }}
             flexDirection={{
               xsml: "column",
               sm: "colum",
@@ -860,7 +882,17 @@ const FrontPage = () => {
                 h="230px"
                 zIndex="10"
               ></Box>
-              <Box position="absolute" top="-30px" zIndex="50">
+              <Box
+                position="absolute"
+                top={{
+                  xsml: "-30px",
+                  sm: "-30px",
+                  md: "-364px",
+                  lg: "-30px",
+                  xl: "-30px",
+                }}
+                zIndex="50"
+              >
                 <Image margin="0 auto" src={FrontEndDesignImage}></Image>
               </Box>
             </Box>
@@ -953,7 +985,13 @@ const FrontPage = () => {
             </Box>
           </Flex>
           <Flex
-            my="9rem"
+            my={{
+              xsml: "9rem",
+              sm: "9rem",
+              md: "30rem",
+              lg: "9rem",
+              xl: "9rem",
+            }}
             flexDirection={{
               xsml: "column",
               sm: "column",
@@ -972,7 +1010,17 @@ const FrontPage = () => {
                 h="200px"
                 zIndex="10"
               ></Box>
-              <Center position="absolute" top="-73px" zIndex="50">
+              <Center
+                position="absolute"
+                top={{
+                  xsml: "-73px",
+                  sm: "-73px",
+                  md: "-387px",
+                  lg: "-73px",
+                  xl: "-73px",
+                }}
+                zIndex="50"
+              >
                 <Image w="80%" src={JavaImage} />
               </Center>
             </Box>
@@ -1058,7 +1106,13 @@ const FrontPage = () => {
             </Box>
           </Flex>
           <Flex
-            my="9.7rem"
+            my={{
+              xsml: "9.7rem",
+              sm: "9.7rem",
+              md: "17rem",
+              lg: "9.7rem",
+              xl: "9.7rem",
+            }}
             flexDirection={{
               xsml: "column",
               sm: "colum",
@@ -1150,7 +1204,17 @@ const FrontPage = () => {
                 h="200px"
                 zIndex="10"
               ></Box>
-              <Box position="absolute" top="0px" zIndex="50">
+              <Box
+                position="absolute"
+                top={{
+                  xsml: "0px",
+                  sm: "0px",
+                  md: "-244px",
+                  lg: "0px",
+                  xl: "0px",
+                }}
+                zIndex="50"
+              >
                 <Image margin="0 auto" src={PythonImage}></Image>
               </Box>
             </Box>
@@ -1381,25 +1445,33 @@ const FrontPage = () => {
                   fontWeight="400"
                   lineHeight="24px"
                   p="1em"
+                  float = {{
+                    xsml: "right",
+                    sm: "right",
+                    md: "right",
+                    lg: "none",
+                    xl: "none"
+                  }}
                 >
                   Copyrights 2022
                 </Text>
               </Box>
             </Flex>
-            <Box position="relative" m="0 auto" h="150px">
+            <Center>
               <Box
-                borderRadius="50%"
                 bgColor="#F11623"
+                position="relative"
+                top="104px"
                 filter="auto"
-                blur="144px"
-                w="250px"
-                top="154px"
-                left="500px"
-                h="100px"
-                position="absolute"
-                zIndex="10"
+                blur="116px"
+                w="150px"
+                h="150px"
+                borderBottomLeftRadius="0"
+                borderBottomRightRadius="100%"
+                borderTopLeftRadius="0"
+                borderTopRightRadius="0"
               ></Box>
-            </Box>
+            </Center>
           </Box>
         </Box>
       </Center>
