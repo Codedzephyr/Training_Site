@@ -677,8 +677,8 @@ const FrontPage = () => {
               xl: "row",
             }}
           >
-            <Box flex="1" position="relative">
-              <Box
+            <Box flex="1">
+              {/* <Box
                 borderRadius="50%"
                 bgColor="#727272"
                 filter="auto"
@@ -686,20 +686,8 @@ const FrontPage = () => {
                 position="relative"
                 h="200px"
                 zIndex="10"
-              ></Box>
-              <Box
-                position="absolute"
-                top={{
-                  xsml: "0px",
-                  sm: "0px",
-                  md: "-194px",
-                  lg: "0px",
-                  xl: "0px",
-                }}
-                zIndex="20"
-              >
+              ></Box> */}
                 <Image src={ProductDesignImage} />
-              </Box>
             </Box>
             <Box flex="1">
               <Box
@@ -783,13 +771,7 @@ const FrontPage = () => {
             </Box>
           </Flex>
           <Flex
-            my={{
-              xsml: "0rem",
-              sm: "9.7rem",
-              md: "25.7rem",
-              lg: "9.7rem",
-              xl: "9.7rem",
-            }}
+            my="9.7rem"
             flexDirection={{
               xsml: "column",
               sm: "colum",
@@ -872,29 +854,7 @@ const FrontPage = () => {
               </Box>
             </Box>
             <Box flex="1" position="relative">
-              <Box
-                borderRadius="50%"
-                boxShadow="xs"
-                bgColor="#EA00B78C"
-                filter="auto"
-                blur="241px"
-                position="relative"
-                h="230px"
-                zIndex="10"
-              ></Box>
-              <Box
-                position="absolute"
-                top={{
-                  xsml: "-30px",
-                  sm: "-30px",
-                  md: "-364px",
-                  lg: "-30px",
-                  xl: "-30px",
-                }}
-                zIndex="50"
-              >
                 <Image margin="0 auto" src={FrontEndDesignImage}></Image>
-              </Box>
             </Box>
             {/* for smaller screens */}
             <Box
@@ -985,13 +945,7 @@ const FrontPage = () => {
             </Box>
           </Flex>
           <Flex
-            my={{
-              xsml: "9rem",
-              sm: "9rem",
-              md: "30rem",
-              lg: "9rem",
-              xl: "9rem",
-            }}
+            my= "9rem"
             flexDirection={{
               xsml: "column",
               sm: "column",
@@ -1000,28 +954,10 @@ const FrontPage = () => {
               xl: "row",
             }}
           >
-            <Box flex="1" position="relative">
-              <Box
-                borderRadius="50%"
-                bgColor="#166DF1"
-                filter="auto"
-                blur="241px"
-                position="relative"
-                h="200px"
-                zIndex="10"
-              ></Box>
+            <Box flex="1">
               <Center
-                position="absolute"
-                top={{
-                  xsml: "-73px",
-                  sm: "-73px",
-                  md: "-387px",
-                  lg: "-73px",
-                  xl: "-73px",
-                }}
-                zIndex="50"
               >
-                <Image w="80%" src={JavaImage} />
+                <Image w="100%" src={JavaImage} />
               </Center>
             </Box>
             <Box flex="1">
@@ -1106,13 +1042,7 @@ const FrontPage = () => {
             </Box>
           </Flex>
           <Flex
-            my={{
-              xsml: "9.7rem",
-              sm: "9.7rem",
-              md: "17rem",
-              lg: "9.7rem",
-              xl: "9.7rem",
-            }}
+            my="9.7rem"
             flexDirection={{
               xsml: "column",
               sm: "colum",
@@ -1194,30 +1124,9 @@ const FrontPage = () => {
                 </Button>
               </Box>
             </Box>
-            <Box flex="1" position="relative">
-              <Box
-                borderRadius="50%"
-                bgColor="#6700EAA8"
-                filter="auto"
-                blur="241px"
-                position="relative"
-                h="200px"
-                zIndex="10"
-              ></Box>
-              <Box
-                position="absolute"
-                top={{
-                  xsml: "0px",
-                  sm: "0px",
-                  md: "-244px",
-                  lg: "0px",
-                  xl: "0px",
-                }}
-                zIndex="50"
-              >
+            <Box flex="1">
                 <Image margin="0 auto" src={PythonImage}></Image>
               </Box>
-            </Box>
             {/* for smaller screens */}
             <Box
               flex="1"
