@@ -96,7 +96,7 @@ const FrontPage = () => {
                         xl: "2.5rem",
                       }}
                     >
-                      Codeinn
+                      Coursewind
                     </Text>
                   </Box>
                 </Flex>
@@ -782,7 +782,7 @@ const FrontPage = () => {
                       bgColor: "white",
                     }}
                   >
-                    Register
+                    View Details
                   </Button>
                 </Box>
               </Box>
@@ -867,7 +867,7 @@ const FrontPage = () => {
                     bgColor: "white",
                   }}
                 >
-                  Register
+                  View Details
                 </Button>
               </Box>
             </Box>
@@ -966,7 +966,7 @@ const FrontPage = () => {
                     bgColor: "white",
                   }}
                 >
-                  Register
+                  View Details
                 </Button>
               </Box>
             </Box>
@@ -1069,7 +1069,7 @@ const FrontPage = () => {
                       bgColor: "white",
                     }}
                   >
-                    Register
+                    View Details
                   </Button>
                 </Box>
               </Box>
@@ -1160,7 +1160,7 @@ const FrontPage = () => {
                     bgColor: "white",
                   }}
                 >
-                  Register
+                  View Details
                 </Button>
               </Box>
             </Box>
@@ -1258,7 +1258,7 @@ const FrontPage = () => {
                     bgColor: "white",
                   }}
                 >
-                  Register
+                  View Details
                 </Button>
               </Box>
             </Box>
