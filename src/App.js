@@ -1,11 +1,14 @@
 import "./App.css";
 import FrontPage from "./Components/FrontPage";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <FrontPage></FrontPage>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path = "/" element = {<FrontPage/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
