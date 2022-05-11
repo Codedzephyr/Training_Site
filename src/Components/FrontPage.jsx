@@ -745,10 +745,9 @@ const FrontPage = () => {
                   }}
                   lineHeight="1.7"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ducimus consequatur dolores in excepturi, temporibus possimus
-                  optio hic esse sunt, rem iste aperiam cum, odit libero
-                  dignissimos vero cupiditate eveniet labore!
+                  This track is targeted at teaching total beginners and persons
+                  with past rudimentary experience of UI/UX design, how to
+                  create aesthetically appealing and easy-to-use interfaces.
                 </Text>
                 <Box
                   display={{
@@ -830,10 +829,11 @@ const FrontPage = () => {
                 }}
                 lineHeight="1.7"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                consequatur dolores in excepturi, temporibus possimus optio hic
-                esse sunt, rem iste aperiam cum, odit libero dignissimos vero
-                cupiditate eveniet labore!XX
+                Do you realize that the only functionality of a web application
+                that the user directly interacts with is through the web page?
+                Implement it poorly and, to the user, the server-side becomes
+                irrelevant. Get started as a front-end web developer using
+                HTML,CSS and JavaScript.
               </Text>
               <Box
                 display={{
@@ -929,10 +929,11 @@ const FrontPage = () => {
                 }}
                 lineHeight="1.7"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                consequatur dolores in excepturi, temporibus possimus optio hic
-                esse sunt, rem iste aperiam cum, odit libero dignissimos vero
-                cupiditate eveniet labore!
+                Do you realize that the only functionality of a web application
+                that the user directly interacts with is through the web page?
+                Implement it poorly and, to the user, the server-side becomes
+                irrelevant. Get started as a front-end web developer using
+                HTML,CSS and JavaScript.
               </Text>
               <Box
                 display={{
@@ -1018,7 +1019,7 @@ const FrontPage = () => {
                     xl: "0rem",
                   }}
                 >
-                  JAVA
+                  Backend Development With Java(Spring)
                 </Text>
                 <Text
                   color="white"
@@ -1032,10 +1033,8 @@ const FrontPage = () => {
                   }}
                   lineHeight="1.7"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ducimus consequatur dolores in excepturi, temporibus possimus
-                  optio hic esse sunt, rem iste aperiam cum, odit libero
-                  dignissimos vero cupiditate eveniet labore!
+                  A Simple and Systsematic approachh to learning java and spring
+                  with the intention of developing backend applications.
                 </Text>
                 <Box
                   id="section"
@@ -1110,7 +1109,7 @@ const FrontPage = () => {
                 fontSize="clamp(1.5rem,10vw,2.5rem)"
                 fontWeight="600"
               >
-                Python and Machine Learning
+                Machine Learning With Python
               </Text>
               <Text
                 color="white"
@@ -1124,10 +1123,10 @@ const FrontPage = () => {
                 }}
                 lineHeight="1.7"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                consequatur dolores in excepturi, temporibus possimus optio hic
-                esse sunt, rem iste aperiam cum, odit libero dignissimos vero
-                cupiditate eveniet labore!XX
+                This Track is focused on calibrating an absolute beginner or one
+                with pre-existing knowledge on the right path to kickstart their
+                career as a data scientist/ data analyst with generally accepted
+                tools,techniques and methodologies.
               </Text>
               <Box
                 display={{
@@ -1201,7 +1200,7 @@ const FrontPage = () => {
                   xl: "0rem",
                 }}
               >
-                Python and Machine Learning
+                Machine Learning with Python.
               </Text>
               <Text
                 color="white"
@@ -1222,10 +1221,10 @@ const FrontPage = () => {
                 }}
                 lineHeight="1.7"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                consequatur dolores in excepturi, temporibus possimus optio hic
-                esse sunt, rem iste aperiam cum, odit libero dignissimos vero
-                cupiditate eveniet labore!
+                This Track is focused on calibrating an absolute beginner or one
+                with pre-existing knowledge on the right path to kickstart their
+                career as a data scientist/ data analyst with generally accepted
+                tools,techniques and methodologies.
               </Text>
               <Box
                 display={{
