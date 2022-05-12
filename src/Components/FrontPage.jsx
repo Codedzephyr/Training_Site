@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/react";
 import NavbarHeaderImage from "../image/Group_20.svg";
 import LearnImage from "../image/undraw_font_re_efri.svg";
 import ProductDesignImage from "../image/undraw_design_tools_-42-tf.svg";
@@ -784,7 +785,12 @@ const FrontPage = () => {
                       bgColor: "white",
                     }}
                   >
-                    View Details
+                    <Link
+                      href="https://app.tryklas.com/course/1a63f18b-976b-40db-ba10-db20efe5645f"
+                      target="_blank"
+                    >
+                      View Details
+                    </Link>
                   </Button>
                 </Box>
               </Box>
@@ -870,7 +876,12 @@ const FrontPage = () => {
                     bgColor: "white",
                   }}
                 >
-                  View Details
+                  <Link
+                    href=" https://app.tryklas.com/course/431dc8a4-4df9-4b71-9149-a0f06a7fc123"
+                    target="_blank"
+                  >
+                    View Details
+                  </Link>
                 </Button>
               </Box>
             </Box>
@@ -970,7 +981,12 @@ const FrontPage = () => {
                     bgColor: "white",
                   }}
                 >
-                  View Details
+                  <Link
+                    href=" https://app.tryklas.com/course/431dc8a4-4df9-4b71-9149-a0f06a7fc123"
+                    target="_blank"
+                  >
+                    View Details
+                  </Link>
                 </Button>
               </Box>
             </Box>
@@ -1072,7 +1088,12 @@ const FrontPage = () => {
                       bgColor: "white",
                     }}
                   >
-                    View Details
+                    <Link
+                      href="http://app.tryklas.com/course/8f4d4dd7-da5d-4872-8857-ca5e37ee7f23"
+                      target="_blank"
+                    >
+                      View Details
+                    </Link>
                   </Button>
                 </Box>
               </Box>
@@ -1163,7 +1184,12 @@ const FrontPage = () => {
                     bgColor: "white",
                   }}
                 >
-                  View Details
+                  <Link
+                    href="https://app.tryklas.com/course/3735a267-f9f4-4552-b27e-e741798c6f15"
+                    target="_blank"
+                  >
+                    View Details
+                  </Link>
                 </Button>
               </Box>
             </Box>
@@ -1261,7 +1287,12 @@ const FrontPage = () => {
                     bgColor: "white",
                   }}
                 >
-                  View Details
+                  <Link
+                    href="https://app.tryklas.com/course/3735a267-f9f4-4552-b27e-e741798c6f15"
+                    target="_blank"
+                  >
+                    View Details
+                  </Link>
                 </Button>
               </Box>
             </Box>
