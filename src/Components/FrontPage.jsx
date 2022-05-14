@@ -31,9 +31,19 @@ const theme = extendTheme({
 
 const FrontPage = () => {
   const [isDisplayNavigationBar, setNavigationBarDisplay] = useState(false);
+  const [closeButtonDisappear, setCloseButtonDisappear] = useState(false);
+  const [hamburgerAppear, setHamburgerDisappear] = useState(true);
 
   const handleclickShow = () => {
     setNavigationBarDisplay(!isDisplayNavigationBar);
+    setCloseButtonDisappear(!closeButtonDisappear);
+    setHamburgerDisappear(!hamburgerAppear);
+  };
+
+  const handleclickShow1 = () => {
+    setNavigationBarDisplay(!closeButtonDisappear);
+    setHamburgerDisappear(!hamburgerAppear);
+    setCloseButtonDisappear(!closeButtonDisappear);
   };
   return (
     <ChakraProvider theme={theme}>
@@ -101,30 +111,63 @@ const FrontPage = () => {
                   </Box>
                 </Flex>
                 <Box flex="1">
-                  <Box
-                    my="2.9rem"
-                    display={{
-                      xsml: "flex",
-                      sm: "flex",
-                      md: "flex",
-                      lg: "none",
-                      xl: "none",
-                    }}
-                    justifyContent="flex-end"
-                    cursor="pointer"
-                    onClick={handleclickShow}
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                      width="25"
-                      height="25"
+                  {hamburgerAppear ? (
+                    <Box
+                      my="1.9rem"
+                      display={{
+                        xsml: "flex",
+                        sm: "flex",
+                        md: "flex",
+                        lg: "none",
+                        xl: "none",
+                      }}
+                      justifyContent="flex-end"
+                      cursor="pointer"
+                      onClick={handleclickShow}
                     >
-                      <path
-                        fill="#fff"
-                        d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
-                      />
-                    </svg>
+                      <svg
+                        width="40"
+                        height="40"
+                        xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 24 24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="#fff"
+                          d="M5 7h14c.6 0 1-.4 1-1s-.4-1-1-1H5C4.4 5 4 5.4 4 6S4.4 7 5 7zM5 13h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1S4.4 13 5 13zM5 19h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1S4.4 19 5 19z"
+                        />
+                      </svg>
+                    </Box>
+                  ) : null}
+
+                  <Box flex="1">
+                    {closeButtonDisappear ? (
+                      <Box
+                        my="1.9rem"
+                        display={{
+                          xsml: "flex",
+                          sm: "flex",
+                          md: "flex",
+                          lg: "none",
+                          xl: "none",
+                        }}
+                        justifyContent="flex-end"
+                        cursor="pointer"
+                        onClick={handleclickShow1}
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            fill="#fff"
+                            d="M437.5 386.6L306.9 256l130.6-130.6c14.1-14.1 14.1-36.8 0-50.9-14.1-14.1-36.8-14.1-50.9 0L256 205.1 125.4 74.5c-14.1-14.1-36.8-14.1-50.9 0-14.1 14.1-14.1 36.8 0 50.9L205.1 256 74.5 386.6c-14.1 14.1-14.1 36.8 0 50.9 14.1 14.1 36.8 14.1 50.9 0L256 306.9l130.6 130.6c14.1 14.1 36.8 14.1 50.9 0 14-14.1 14-36.9 0-50.9z"
+                          />
+                        </svg>
+                      </Box>
+                    ) : null}
                   </Box>
                 </Box>
               </Flex>
@@ -269,43 +312,6 @@ const FrontPage = () => {
                 >
                   Support
                 </ListItem>
-                <ListItem
-                  _hover={{
-                    color: "blue",
-                    cursor: "pointer",
-                  }}
-                  px="1.5em"
-                  display={{
-                    xsml: "flex",
-                    sm: "flex",
-                    md: "flex",
-                    lg: "block",
-                    xl: "block",
-                  }}
-                  justifyContent={{
-                    xsml: "center",
-                    sm: "center",
-                    md: "center",
-                    lg: "flex-start",
-                    xl: "flex-start",
-                  }}
-                  mt={{
-                    xsml: "1.5rem",
-                    sm: "1.2rem",
-                    md: "1.2rem",
-                    lg: "0rem",
-                    xl: "0rem",
-                  }}
-                >
-                  <Button
-                    size="lg"
-                    px="3rem"
-                    borderRadius="25px"
-                    bgColor="blue"
-                  >
-                    Register
-                  </Button>
-                </ListItem>
               </UnorderedList>
               {/* small screens */}
               {isDisplayNavigationBar ? (
@@ -448,43 +454,6 @@ const FrontPage = () => {
                   >
                     Support
                   </ListItem>
-                  <ListItem
-                    _hover={{
-                      color: "blue",
-                      cursor: "pointer",
-                    }}
-                    px="1.5em"
-                    display={{
-                      xsml: "flex",
-                      sm: "flex",
-                      md: "flex",
-                      lg: "block",
-                      xl: "block",
-                    }}
-                    justifyContent={{
-                      xsml: "center",
-                      sm: "center",
-                      md: "center",
-                      lg: "flex-start",
-                      xl: "flex-start",
-                    }}
-                    mt={{
-                      xsml: "1.5rem",
-                      sm: "1.2rem",
-                      md: "1.2rem",
-                      lg: "0rem",
-                      xl: "0rem",
-                    }}
-                  >
-                    <Button
-                      size="lg"
-                      px="3rem"
-                      borderRadius="25px"
-                      bgColor="blue"
-                    >
-                      Register
-                    </Button>
-                  </ListItem>
                 </UnorderedList>
               ) : (
                 <Box></Box>
@@ -530,44 +499,6 @@ const FrontPage = () => {
                 user interface and conduct user experience <br />
                 research.
               </Text>
-              <Box
-                display={{
-                  xsml: "flex",
-                  sm: "flex",
-                  md: "flex",
-                  lg: "block",
-                  xl: "block",
-                }}
-                justifyContent={{
-                  xsml: "center",
-                  sm: "center",
-                  md: "center",
-                  lg: "flex-start",
-                  xl: "flex-start",
-                }}
-                mt={{
-                  xsml: "1.5rem",
-                  sm: "1.2rem",
-                  md: "1.2rem",
-                  lg: "1.2rem",
-                  xl: "1.2rem",
-                }}
-              >
-                <Button
-                  size="lg"
-                  px="3rem"
-                  borderRadius="25px"
-                  color="white"
-                  bgColor="blue"
-                  _hover={{
-                    color: "blue",
-                    cursor: "pointer",
-                    bgColor: "white",
-                  }}
-                >
-                  Register
-                </Button>
-              </Box>
             </Box>
             <Box flex="1">
               <Box>
@@ -622,48 +553,6 @@ const FrontPage = () => {
                 Learn how to code,design usable and accessible user interface
                 and conduct user experience research
               </Text>
-              <Box
-                _hover={{
-                  color: "blue",
-                  cursor: "pointer",
-                }}
-                display={{
-                  xsml: "flex",
-                  sm: "flex",
-                  md: "flex",
-                  lg: "block",
-                  xl: "block",
-                }}
-                justifyContent={{
-                  xsml: "center",
-                  sm: "center",
-                  md: "center",
-                  lg: "flex-start",
-                  xl: "flex-start",
-                }}
-                mt={{
-                  xsml: "1.5rem",
-                  sm: "1.2rem",
-                  md: "1.2rem",
-                  lg: "1.2rem",
-                  xl: "1.2rem",
-                }}
-              >
-                <Button
-                  size="lg"
-                  px="3rem"
-                  borderRadius="25px"
-                  bgColor="blue"
-                  color="white"
-                  _hover={{
-                    color: "blue",
-                    cursor: "pointer",
-                    bgColor: "white",
-                  }}
-                >
-                  Register
-                </Button>
-              </Box>
             </Box>
           </Flex>
           <Box>
